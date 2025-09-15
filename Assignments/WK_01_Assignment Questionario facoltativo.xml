@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<root ptr="0x555fdcdc3290" id="0" symbol="11SwRootFrame" lower="1">
+ <sfxViewShells>
+  <SwView>
+   <SfxViewShell ptr="0x555fd9e2e0d0" id="0"/>
+   <SwCursorShell>
+    <SwViewShell/>
+    <m_pCurrentCursor>
+     <SwPaM>
+      <point>
+       <SwPosition nNode="27" nContent="0"/>
+      </point>
+      <mark>
+       <SwPosition nNode="9" nContent="0"/>
+      </mark>
+     </SwPaM>
+    </m_pCurrentCursor>
+   </SwCursorShell>
+  </SwView>
+ </sfxViewShells>
+ <infos>
+  <bounds left="284" top="284" width="15271" height="15840" bottom="16123" right="15554" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+  <prtBounds left="0" top="0" width="15271" height="15840" bottom="15839" right="15270"/>
+ </infos>
+ <page ptr="0x555fdce1d440" id="1" symbol="11SwPageFrame" upper="0" lower="2">
+  <page_status ValidFlyLayout="true" ValidFlyContent="true" ValidFlyInCnt="true" ValidLayout="true" ValidContent="true"/>
+  <page_info phyNum="1" virtNum="1" pageDesc="Default Page Style"/>
+  <infos>
+   <bounds left="3315" top="284" width="12240" height="15840" bottom="16123" right="15554" mbFixSize="true" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+   <prtBounds left="1440" top="1440" width="9360" height="12960" bottom="14399" right="10799"/>
+  </infos>
+  <body ptr="0x555fdce185b0" id="2" symbol="11SwBodyFrame" upper="1" lower="3">
+   <infos>
+    <bounds left="4755" top="1724" width="9360" height="12960" bottom="14683" right="14114" mbFixSize="true" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+    <prtBounds left="0" top="0" width="9360" height="12960" bottom="12959" right="9359"/>
+   </infos>
+   <txt ptr="0x555fdcd65270" id="3" symbol="11SwTextFrame" next="4" upper="2" txtNodeIndex="9" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="1724" width="9360" height="300" bottom="2023" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="0" width="9360" height="300" bottom="299" right="9359"/>
+    </infos>
+Assignment Questionario    <Text nLength="23" nType="PortionType::Para" nHeight="300" nWidth="3164" Portion="Assignment Questionario"/>
+    <LineBreak nWidth="3164" Line="Assignment Questionario"/>
+    <Finish/>
+    <SwParaPortion ptr="0x555fdf0dadb0" symbol="13SwParaPortion" width="3164" height="300" length="23" type="PortionType::Para" portion="Assignment Questionario">
+     <SwLineLayout ptr="0x555fdf0dadb0" symbol="13SwParaPortion" width="3164" height="300" length="23" type="PortionType::Para" portion="Assignment Questionario">
+      <SwParaPortion ptr="0x555fdf0dadb0" symbol="13SwParaPortion" width="3164" height="300" length="23" type="PortionType::Para" portion="Assignment Questionario"/>
+     </SwLineLayout>
+    </SwParaPortion>
+   </txt>
+   <txt ptr="0x555fdcdc0770" id="4" symbol="11SwTextFrame" next="5" prev="3" upper="2" txtNodeIndex="10" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="2024" width="9360" height="298" bottom="2321" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="45" width="9360" height="253" bottom="297" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1de10" id="5" symbol="11SwTextFrame" next="6" prev="4" upper="2" txtNodeIndex="11" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="2322" width="9360" height="2900" bottom="5221" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="360" top="37" width="9000" height="2863" bottom="2899" right="9359"/>
+    </infos>
+In questo corso, chi sbaglia si sente spesso rinfacciare il proprio errore.**Se questo scenario fosse quotidiano, credo che in classe nessuno chiederebbe o farebbe osservazioni perche’ la struttura del corso e’ per ora basata su prove ed errori e quindi sarebbe fortemente stressante **Se non ci fosse nessun rinfacciare errori tutt3 si sentirebbero in liberta’ di fare errori e di chiedere e non ci sarebbe disagio. La nostra cultura e’ molto impostata sul fatto che sbagliare e’ “sbagliato” e questa possibilita’ apre scenari non “usuali” nell’approcio ad un problema.    <Special nLength="0" nType="PortionType::Number" rText="1." nHeight="220">
+     <SwFont ptr="0x555fd9d84370" color="ffffffff" weight="bold"/>
+    </Special>
+    <Text nLength="0" nType="PortionType::TabLeft" nHeight="253" nWidth="176"/>
+    <Text nLength="75" nType="PortionType::Text" nHeight="253" nWidth="7544" Portion="In questo corso, chi sbaglia si sente spesso rinfacciare il proprio errore."/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="7904" Line="1.In questo corso, chi sbaglia si sente spesso rinfacciare il proprio errore.*"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak Line="*"/>
+    <Text nLength="79" nType="PortionType::Lay" nHeight="253" nWidth="7962" Portion="Se questo scenario fosse quotidiano, credo che in classe nessuno chiederebbe o "/>
+    <LineBreak nWidth="7962" Line="Se questo scenario fosse quotidiano, credo che in classe nessuno chiederebbe o "/>
+    <Text nLength="91" nType="PortionType::Lay" nHeight="253" nWidth="8610" Portion="farebbe osservazioni perche&#x2019; la struttura del corso e&#x2019; per ora basata su prove ed errori e "/>
+    <LineBreak nWidth="8610" Line="farebbe osservazioni perche&#x2019; la struttura del corso e&#x2019; per ora basata su prove ed errori e "/>
+    <Text nLength="37" nType="PortionType::Text" nHeight="253" nWidth="3694" Portion="quindi sarebbe fortemente stressante "/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="3694" Line="quindi sarebbe fortemente stressante *"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak Line="*"/>
+    <Text nLength="96" nType="PortionType::Lay" nHeight="253" nWidth="8585" Portion="Se non ci fosse nessun rinfacciare errori tutt3 si sentirebbero in liberta&#x2019; di fare errori e di "/>
+    <LineBreak nWidth="8585" Line="Se non ci fosse nessun rinfacciare errori tutt3 si sentirebbero in liberta&#x2019; di fare errori e di "/>
+    <Text nLength="86" nType="PortionType::Lay" nHeight="253" nWidth="8206" Portion="chiedere e non ci sarebbe disagio. La nostra cultura e&#x2019; molto impostata sul fatto che "/>
+    <LineBreak nWidth="8206" Line="chiedere e non ci sarebbe disagio. La nostra cultura e&#x2019; molto impostata sul fatto che "/>
+    <Text nLength="92" nType="PortionType::Text" nHeight="253" nWidth="8585" Portion="sbagliare e&#x2019; &#x201C;sbagliato&#x201D; e questa possibilita&#x2019; apre scenari non &#x201C;usuali&#x201D; nell&#x2019;approcio ad un"/>
+    <Text nLength="1" nType="PortionType::Hole" Portion=" "/>
+    <LineBreak nWidth="8585" Line="sbagliare e&#x2019; &#x201C;sbagliato&#x201D; e questa possibilita&#x2019; apre scenari non &#x201C;usuali&#x201D; nell&#x2019;approcio ad un "/>
+    <Text nLength="9" nType="PortionType::Lay" nHeight="253" nWidth="978" Portion="problema."/>
+    <LineBreak nWidth="978" Line="problema."/>
+    <Finish/>
+    <SwParaPortion ptr="0x555fdf809190" symbol="13SwParaPortion" width="7904" height="253" length="76" type="PortionType::Para" portion="In questo corso, chi sbaglia si sente spesso rinfacciare il proprio errore.*">
+     <SwLineLayout ptr="0x555fdf809190" symbol="13SwParaPortion" width="7904" height="253" length="76" type="PortionType::Para" portion="In questo corso, chi sbaglia si sente spesso rinfacciare il proprio errore.*">
+      <SwFieldPortion ptr="0x555fdcfe2fd0" symbol="15SwNumberPortion" width="184" height="253" length="0" type="PortionType::Number" portion="" expand="1."/>
+      <SwFixPortion ptr="0x555fdf81fc00" symbol="16SwTabLeftPortion" width="176" height="253" length="0" type="PortionType::TabLeft" portion="" fix="184"/>
+      <SwLinePortion ptr="0x555fdf80eb00" symbol="13SwTextPortion" width="7544" height="253" length="75" type="PortionType::Text" portion="In questo corso, chi sbaglia si sente spesso rinfacciare il proprio errore."/>
+      <SwBreakPortion ptr="0x555fde771e30" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fdcfe14f0" symbol="12SwLineLayout" width="0" height="253" length="1" type="PortionType::Lay" portion="*">
+      <SwBreakPortion ptr="0x555fde6c2f30" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fde60c130" symbol="12SwLineLayout" width="7962" height="253" length="79" type="PortionType::Lay" portion="Se questo scenario fosse quotidiano, credo che in classe nessuno chiederebbe o ">
+      <SwLineLayout ptr="0x555fde60c130" symbol="12SwLineLayout" width="7962" height="253" length="79" type="PortionType::Lay" portion="Se questo scenario fosse quotidiano, credo che in classe nessuno chiederebbe o "/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fd9d41780" symbol="12SwLineLayout" width="8610" height="253" length="91" type="PortionType::Lay" portion="farebbe osservazioni perche&#x2019; la struttura del corso e&#x2019; per ora basata su prove ed errori e ">
+      <SwLineLayout ptr="0x555fd9d41780" symbol="12SwLineLayout" width="8610" height="253" length="91" type="PortionType::Lay" portion="farebbe osservazioni perche&#x2019; la struttura del corso e&#x2019; per ora basata su prove ed errori e "/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fdf766d30" symbol="12SwLineLayout" width="3694" height="253" length="38" type="PortionType::Lay" portion="quindi sarebbe fortemente stressante *">
+      <SwLinePortion ptr="0x555fde6048b0" symbol="13SwTextPortion" width="3694" height="253" length="37" type="PortionType::Text" portion="quindi sarebbe fortemente stressante "/>
+      <SwBreakPortion ptr="0x555fde04b2e0" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fd9f1a230" symbol="12SwLineLayout" width="0" height="253" length="1" type="PortionType::Lay" portion="*">
+      <SwBreakPortion ptr="0x555fdcebdc00" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fd9e31ee0" symbol="12SwLineLayout" width="8585" height="253" length="96" type="PortionType::Lay" portion="Se non ci fosse nessun rinfacciare errori tutt3 si sentirebbero in liberta&#x2019; di fare errori e di ">
+      <SwLineLayout ptr="0x555fd9e31ee0" symbol="12SwLineLayout" width="8585" height="253" length="96" type="PortionType::Lay" portion="Se non ci fosse nessun rinfacciare errori tutt3 si sentirebbero in liberta&#x2019; di fare errori e di "/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fde63f310" symbol="12SwLineLayout" width="8206" height="253" length="86" type="PortionType::Lay" portion="chiedere e non ci sarebbe disagio. La nostra cultura e&#x2019; molto impostata sul fatto che ">
+      <SwLineLayout ptr="0x555fde63f310" symbol="12SwLineLayout" width="8206" height="253" length="86" type="PortionType::Lay" portion="chiedere e non ci sarebbe disagio. La nostra cultura e&#x2019; molto impostata sul fatto che "/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fdf782d80" symbol="12SwLineLayout" width="8585" height="253" length="93" type="PortionType::Lay" portion="sbagliare e&#x2019; &#x201C;sbagliato&#x201D; e questa possibilita&#x2019; apre scenari non &#x201C;usuali&#x201D; nell&#x2019;approcio ad un ">
+      <SwLinePortion ptr="0x555fdf75a000" symbol="13SwTextPortion" width="8585" height="253" length="92" type="PortionType::Text" portion="sbagliare e&#x2019; &#x201C;sbagliato&#x201D; e questa possibilita&#x2019; apre scenari non &#x201C;usuali&#x201D; nell&#x2019;approcio ad un"/>
+      <SwHolePortion ptr="0x555fde64e3b0" symbol="13SwHolePortion" width="0" height="253" length="1" type="PortionType::Hole" portion=" " blank-width="0"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fdf790000" symbol="12SwLineLayout" width="978" height="253" length="9" type="PortionType::Lay" portion="problema.">
+      <SwLineLayout ptr="0x555fdf790000" symbol="12SwLineLayout" width="978" height="253" length="9" type="PortionType::Lay" portion="problema."/>
+     </SwLineLayout>
+    </SwParaPortion>
+   </txt>
+   <txt ptr="0x555fdce1df60" id="6" symbol="11SwTextFrame" next="7" prev="5" upper="2" txtNodeIndex="12" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="5222" width="9360" height="290" bottom="5511" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1e0b0" id="7" symbol="11SwTextFrame" next="8" prev="6" upper="2" txtNodeIndex="13" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="5512" width="9360" height="290" bottom="5801" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1e200" id="8" symbol="11SwTextFrame" next="9" prev="7" upper="2" txtNodeIndex="14" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="5802" width="9360" height="1160" bottom="6961" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="360" top="37" width="9000" height="1123" bottom="1159" right="9359"/>
+    </infos>
+In questo corso, di solito le persone sono a proprio agio nell'esprimere problemi e disaccordi.**    <Special nLength="0" nType="PortionType::Number" rText="2." nHeight="220">
+     <SwFont ptr="0x555fde4070e0" color="ffffffff" weight="bold"/>
+    </Special>
+    <Text nLength="0" nType="PortionType::TabLeft" nHeight="253" nWidth="176"/>
+    <Text nLength="83" nType="PortionType::Text" nHeight="253" nWidth="8597" Portion="In questo corso, di solito le persone sono a proprio agio nell'esprimere problemi e"/>
+    <Text nLength="1" nType="PortionType::Hole" Portion=" "/>
+    <LineBreak nWidth="8957" Line="2.In questo corso, di solito le persone sono a proprio agio nell'esprimere problemi e "/>
+    <Text nLength="11" nType="PortionType::Text" nHeight="253" nWidth="1162" Portion="disaccordi."/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="1162" Line="disaccordi.*"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak Line="*"/>
+    <Text nLength="0" nType="PortionType::Lay" nHeight="253"/>
+    <LineBreak/>
+    <Finish/>
+    <SwParaPortion ptr="0x555fdf070550" symbol="13SwParaPortion" width="8957" height="253" length="84" type="PortionType::Para" portion="In questo corso, di solito le persone sono a proprio agio nell'esprimere problemi e ">
+     <SwLineLayout ptr="0x555fdf070550" symbol="13SwParaPortion" width="8957" height="253" length="84" type="PortionType::Para" portion="In questo corso, di solito le persone sono a proprio agio nell'esprimere problemi e ">
+      <SwFieldPortion ptr="0x555fd9d87980" symbol="15SwNumberPortion" width="184" height="253" length="0" type="PortionType::Number" portion="" expand="2."/>
+      <SwFixPortion ptr="0x555fde75fd50" symbol="16SwTabLeftPortion" width="176" height="253" length="0" type="PortionType::TabLeft" portion="" fix="184"/>
+      <SwLinePortion ptr="0x555fddf8d630" symbol="13SwTextPortion" width="8597" height="253" length="83" type="PortionType::Text" portion="In questo corso, di solito le persone sono a proprio agio nell'esprimere problemi e"/>
+      <SwHolePortion ptr="0x555fdce22eb0" symbol="13SwHolePortion" width="0" height="253" length="1" type="PortionType::Hole" portion=" " blank-width="0"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fdf7c6ca0" symbol="12SwLineLayout" width="1162" height="253" length="12" type="PortionType::Lay" portion="disaccordi.*">
+      <SwLinePortion ptr="0x555fde408050" symbol="13SwTextPortion" width="1162" height="253" length="11" type="PortionType::Text" portion="disaccordi."/>
+      <SwBreakPortion ptr="0x555fdcee5760" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fdf7e0f70" symbol="12SwLineLayout" width="0" height="253" length="1" type="PortionType::Lay" portion="*">
+      <SwBreakPortion ptr="0x555fdf7257a0" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fd9d0dab0" symbol="12SwLineLayout" width="0" height="253" length="0" type="PortionType::Lay" portion="">
+      <SwLineLayout ptr="0x555fd9d0dab0" symbol="12SwLineLayout" width="0" height="253" length="0" type="PortionType::Lay" portion=""/>
+     </SwLineLayout>
+    </SwParaPortion>
+   </txt>
+   <txt ptr="0x555fdce1e350" id="9" symbol="11SwTextFrame" next="10" prev="8" upper="2" txtNodeIndex="15" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="6962" width="9360" height="290" bottom="7251" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1e4a0" id="10" symbol="11SwTextFrame" next="11" prev="9" upper="2" txtNodeIndex="16" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="7252" width="9360" height="290" bottom="7541" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1e5f0" id="11" symbol="11SwTextFrame" next="12" prev="10" upper="2" txtNodeIndex="17" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="7542" width="9360" height="290" bottom="7831" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="360" top="37" width="9000" height="253" bottom="289" right="9359"/>
+    </infos>
+In questo corso, è sicuro prendersi un rischio.    <Special nLength="0" nType="PortionType::Number" rText="3." nHeight="220">
+     <SwFont ptr="0x555fdf0cda10" color="ffffffff" weight="bold"/>
+    </Special>
+    <Text nLength="0" nType="PortionType::TabLeft" nHeight="253" nWidth="176"/>
+    <Text nLength="47" nType="PortionType::Text" nHeight="253" nWidth="4841" Portion="In questo corso, &#xE8; sicuro prendersi un rischio."/>
+    <LineBreak nWidth="5201" Line="3.In questo corso, &#xE8; sicuro prendersi un rischio."/>
+    <Finish/>
+    <SwParaPortion ptr="0x555fdf059d60" symbol="13SwParaPortion" width="5201" height="253" length="47" type="PortionType::Para" portion="In questo corso, &#xE8; sicuro prendersi un rischio.">
+     <SwLineLayout ptr="0x555fdf059d60" symbol="13SwParaPortion" width="5201" height="253" length="47" type="PortionType::Para" portion="In questo corso, &#xE8; sicuro prendersi un rischio.">
+      <SwFieldPortion ptr="0x555fde5f0bb0" symbol="15SwNumberPortion" width="184" height="253" length="0" type="PortionType::Number" portion="" expand="3."/>
+      <SwFixPortion ptr="0x555fde5ebd30" symbol="16SwTabLeftPortion" width="176" height="253" length="0" type="PortionType::TabLeft" portion="" fix="184"/>
+      <SwLinePortion ptr="0x555fdf6fd500" symbol="13SwTextPortion" width="4841" height="253" length="47" type="PortionType::Text" portion="In questo corso, &#xE8; sicuro prendersi un rischio."/>
+     </SwLineLayout>
+    </SwParaPortion>
+   </txt>
+   <txt ptr="0x555fdce1e740" id="12" symbol="11SwTextFrame" next="13" prev="11" upper="2" txtNodeIndex="18" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="7832" width="9360" height="290" bottom="8121" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1e890" id="13" symbol="11SwTextFrame" next="14" prev="12" upper="2" txtNodeIndex="19" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="8122" width="9360" height="290" bottom="8411" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1e9e0" id="14" symbol="11SwTextFrame" next="15" prev="13" upper="2" txtNodeIndex="20" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="8412" width="9360" height="290" bottom="8701" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1eb30" id="15" symbol="11SwTextFrame" next="16" prev="14" upper="2" txtNodeIndex="21" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="8702" width="9360" height="1160" bottom="9861" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="360" top="37" width="9000" height="1123" bottom="1159" right="9359"/>
+    </infos>
+In questo corso, è difficile chiedere aiuto.**Se fosse difficile chiedere aiuto nessuno lo farebbe se non le poche persone che hanno abbastanza coraggio per farlo - o anche solo la personalita’ per farlo. Questo creerebbe     <Special nLength="0" nType="PortionType::Number" rText="4." nHeight="220">
+     <SwFont ptr="0x555fdf0106f0" color="ffffffff" weight="bold"/>
+    </Special>
+    <Text nLength="0" nType="PortionType::TabLeft" nHeight="253" nWidth="176"/>
+    <Text nLength="44" nType="PortionType::Text" nHeight="253" nWidth="4328" Portion="In questo corso, &#xE8; difficile chiedere aiuto."/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="4688" Line="4.In questo corso, &#xE8; difficile chiedere aiuto.*"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak Line="*"/>
+    <Text nLength="87" nType="PortionType::Lay" nHeight="253" nWidth="8586" Portion="Se fosse difficile chiedere aiuto nessuno lo farebbe se non le poche persone che hanno "/>
+    <LineBreak nWidth="8586" Line="Se fosse difficile chiedere aiuto nessuno lo farebbe se non le poche persone che hanno "/>
+    <Text nLength="89" nType="PortionType::Lay" nHeight="253" nWidth="8586" Portion="abbastanza coraggio per farlo - o anche solo la personalita&#x2019; per farlo. Questo creerebbe "/>
+    <LineBreak nWidth="8586" Line="abbastanza coraggio per farlo - o anche solo la personalita&#x2019; per farlo. Questo creerebbe "/>
+    <Finish/>
+    <SwParaPortion ptr="0x555fdf056fe0" symbol="13SwParaPortion" width="4688" height="253" length="45" type="PortionType::Para" portion="In questo corso, &#xE8; difficile chiedere aiuto.*">
+     <SwLineLayout ptr="0x555fdf056fe0" symbol="13SwParaPortion" width="4688" height="253" length="45" type="PortionType::Para" portion="In questo corso, &#xE8; difficile chiedere aiuto.*">
+      <SwFieldPortion ptr="0x555fdf6955b0" symbol="15SwNumberPortion" width="184" height="253" length="0" type="PortionType::Number" portion="" expand="4."/>
+      <SwFixPortion ptr="0x555fdefd40f0" symbol="16SwTabLeftPortion" width="176" height="253" length="0" type="PortionType::TabLeft" portion="" fix="184"/>
+      <SwLinePortion ptr="0x555fdcdf1990" symbol="13SwTextPortion" width="4328" height="253" length="44" type="PortionType::Text" portion="In questo corso, &#xE8; difficile chiedere aiuto."/>
+      <SwBreakPortion ptr="0x555fdf683f20" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fde742710" symbol="12SwLineLayout" width="0" height="253" length="1" type="PortionType::Lay" portion="*">
+      <SwBreakPortion ptr="0x555fde63b000" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fd9d80ac0" symbol="12SwLineLayout" width="8586" height="253" length="87" type="PortionType::Lay" portion="Se fosse difficile chiedere aiuto nessuno lo farebbe se non le poche persone che hanno ">
+      <SwLineLayout ptr="0x555fd9d80ac0" symbol="12SwLineLayout" width="8586" height="253" length="87" type="PortionType::Lay" portion="Se fosse difficile chiedere aiuto nessuno lo farebbe se non le poche persone che hanno "/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fd9f15a60" symbol="12SwLineLayout" width="8586" height="253" length="89" type="PortionType::Lay" portion="abbastanza coraggio per farlo - o anche solo la personalita&#x2019; per farlo. Questo creerebbe ">
+      <SwLineLayout ptr="0x555fd9f15a60" symbol="12SwLineLayout" width="8586" height="253" length="89" type="PortionType::Lay" portion="abbastanza coraggio per farlo - o anche solo la personalita&#x2019; per farlo. Questo creerebbe "/>
+     </SwLineLayout>
+    </SwParaPortion>
+   </txt>
+   <txt ptr="0x555fdce1ec80" id="16" symbol="11SwTextFrame" next="17" prev="15" upper="2" txtNodeIndex="22" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="9862" width="9360" height="290" bottom="10151" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1edd0" id="17" symbol="11SwTextFrame" next="18" prev="16" upper="2" txtNodeIndex="23" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="10152" width="9360" height="290" bottom="10441" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1ef20" id="18" symbol="11SwTextFrame" next="19" prev="17" upper="2" txtNodeIndex="24" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="10442" width="9360" height="870" bottom="11311" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="833" bottom="869" right="9359"/>
+    </infos>
+Credo che i temi comuni di queste domande si possano riassumere in due filoni princiapali**1. Frontale vs corale    <Text nLength="89" nType="PortionType::Text" nHeight="253" nWidth="8792" Portion="Credo che i temi comuni di queste domande si possano riassumere in due filoni princiapali"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak nWidth="8792" Line="Credo che i temi comuni di queste domande si possano riassumere in due filoni princiapali*"/>
+    <Text nLength="1" nType="PortionType::Break" Portion="*"/>
+    <LineBreak Line="*"/>
+    <Text nLength="21" nType="PortionType::Lay" nHeight="253" nWidth="1993" Portion="1. Frontale vs corale"/>
+    <LineBreak nWidth="1993" Line="1. Frontale vs corale"/>
+    <Finish/>
+    <SwParaPortion ptr="0x555fde4107d0" symbol="13SwParaPortion" width="8792" height="253" length="90" type="PortionType::Para" portion="Credo che i temi comuni di queste domande si possano riassumere in due filoni princiapali*">
+     <SwLineLayout ptr="0x555fde4107d0" symbol="13SwParaPortion" width="8792" height="253" length="90" type="PortionType::Para" portion="Credo che i temi comuni di queste domande si possano riassumere in due filoni princiapali*">
+      <SwLinePortion ptr="0x555fd9fb7d70" symbol="13SwTextPortion" width="8792" height="253" length="89" type="PortionType::Text" portion="Credo che i temi comuni di queste domande si possano riassumere in due filoni princiapali"/>
+      <SwBreakPortion ptr="0x555fdf7c3f00" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fd9d25ed0" symbol="12SwLineLayout" width="0" height="253" length="1" type="PortionType::Lay" portion="*">
+      <SwBreakPortion ptr="0x555fd9e41e00" symbol="14SwBreakPortion" width="0" height="253" length="1" type="PortionType::Break" portion="*" text-height="253"/>
+     </SwLineLayout>
+     <SwLineLayout ptr="0x555fdf791af0" symbol="12SwLineLayout" width="1993" height="253" length="21" type="PortionType::Lay" portion="1. Frontale vs corale">
+      <SwLineLayout ptr="0x555fdf791af0" symbol="12SwLineLayout" width="1993" height="253" length="21" type="PortionType::Lay" portion="1. Frontale vs corale"/>
+     </SwLineLayout>
+    </SwParaPortion>
+   </txt>
+   <txt ptr="0x555fdce1f070" id="19" symbol="11SwTextFrame" next="20" prev="18" upper="2" txtNodeIndex="25" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="11312" width="9360" height="290" bottom="11601" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+2. Singolo      <Text nLength="12" nType="PortionType::Para" nHeight="253" nWidth="1101" Portion="2. Singolo  "/>
+    <LineBreak nWidth="1101" Line="2. Singolo  "/>
+    <Finish/>
+    <SwParaPortion ptr="0x555fdf0702c0" symbol="13SwParaPortion" width="1101" height="253" length="12" type="PortionType::Para" portion="2. Singolo  ">
+     <SwLineLayout ptr="0x555fdf0702c0" symbol="13SwParaPortion" width="1101" height="253" length="12" type="PortionType::Para" portion="2. Singolo  ">
+      <SwParaPortion ptr="0x555fdf0702c0" symbol="13SwParaPortion" width="1101" height="253" length="12" type="PortionType::Para" portion="2. Singolo  "/>
+     </SwLineLayout>
+    </SwParaPortion>
+   </txt>
+   <txt ptr="0x555fdce1f1c0" id="20" symbol="11SwTextFrame" next="21" prev="19" upper="2" txtNodeIndex="26" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="11602" width="9360" height="290" bottom="11891" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+   <txt ptr="0x555fdce1f310" id="21" symbol="11SwTextFrame" prev="20" upper="2" txtNodeIndex="27" WritingMode="Horizontal">
+    <infos>
+     <bounds left="4755" top="11892" width="9360" height="290" bottom="12181" right="14114" mbFixSize="false" mbFrameAreaPositionValid="true" mbFrameAreaSizeValid="true" mbFramePrintAreaValid="true"/>
+     <prtBounds left="0" top="37" width="9360" height="253" bottom="289" right="9359"/>
+    </infos>
+    <Finish/>
+   </txt>
+  </body>
+ </page>
+</root>
