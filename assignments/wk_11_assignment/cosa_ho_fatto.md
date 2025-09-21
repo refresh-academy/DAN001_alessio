@@ -153,12 +153,15 @@ che mi da' 46935,830
 poi si potrebbe vedere chi ha conferito piu' incarichi, chi e' stato pagato di piu', quale struttura ha conferito piu' incarichi ecc
 ho cercato il collaboratore che ha ricevuto piu' pagato ed e' stato gabr
 
-- il responsabile che ha conferito piu' incarichi e' Maria Grazia Bonzagni con 154 incarichi
-- il collaboratore che ha ricevuto piu' incarichi e' Marco Lombardo con 7 incarichi
-- il collaboratore piu' pagato e' stato Roberto Neri con 40000 euro per 1 incarico
-- il collaboratore che ha ricevuto piu' soldi in totale e' stato Marco Lombardo con 55000 euro per 7 incarichi
-- la struttura che ha conferito piu' incarichi e' stata la Direzione Generale con 233 incarichi
-- la struttura che ha conferito piu' soldi in totale e' stata la Direzione Generale con 219000 euro per 233 incarichi
-- la struttura che ha conferito piu' soldi in media per incarico e' stata la Direzione Servizi Educativi con 5000 euro per incarico (ma ha conferito solo
+qui e' successo che e' morto il pc
+avevo ricercato questo qui che aveva preso piu' soldi ed aprendo il link dentro il db al suo curriculum il pc mi e' crashato
+e non avevo salvato
+per fortuna vsc aveva salvato una bozza (credo)
+
+ora penso che vi saluto!
+
+questo assignment mi ha richiesto tutta la mattina e un'oretta dopo pranzo
+avrei potuto sicuramente scrivere di piu' ma ho pensato che avreste avuto troppoa roba da leggere
+
  
 
