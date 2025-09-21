@@ -1,4 +1,5 @@
- 
+1. ho scaricato i database e importato in dbeaver usando posgres
+   1a. ho incontrato problemi perche' la visualizzazz
 “Che informazioni contiene ogni dataset?”
 
 
