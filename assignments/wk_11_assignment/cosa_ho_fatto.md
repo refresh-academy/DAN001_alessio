@@ -10,12 +10,14 @@
 “Quali insights (osservazioni) potrei ricavare/ottenere da questi dati?”
 
  
+ alter table incarichi_conferiti 
+ALTER COLUMN data_inizio_incarico TYPE date USING data_inizio_incarico::date;
+
+non funziona perche' ci sono dei vuoti
  
  
- 
- 
- 
- ---
+---
+
 
  
  importo i dati in un database PostgreSQL per fare un mini landing zone visto che i dati sono un po' sporchi
