@@ -160,8 +160,9 @@ per fortuna vsc aveva salvato una bozza (credo)
 
 ora penso che vi saluto!
 
-questo assignment mi ha richiesto tutta la mattina e un'oretta dopo pranzo
+questo assignment mi ha richiesto tutta la mattina e un'oretta dopo pranzo ma mi sono divertito molto a farlo
 avrei potuto sicuramente scrivere di piu' ma ho pensato che avreste avuto troppoa roba da leggere
+inoltre lavorare da casa per me e' deleterio, non sono abituato e mi distraggo troppo :(
 
  
 
