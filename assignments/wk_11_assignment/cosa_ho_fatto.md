@@ -114,7 +114,7 @@ select SUM(nullif (importo_euro, '')::numeric) as totale_importi
 FROM bologna.incarichi_di_collaborazione;
 ```
 il totale e' di 5551445.47 che e' troppo
-questo perche' la conversione in numerico non e' riuscita perche' ci sono dei valori non convertibili LOL
+questo perche' la conversione in numerico non e' riuscita perche' ci sono dei valori non convertibili oppure il solito problema america italia LOL
 quindi devo convertire i valori in qualche modo
 pensavo di suare trim per togliere gli spazi e replace per togliere il simbolo dell'euro e i punti 
 
@@ -131,7 +131,7 @@ SELECT
   ) AS totale_importi
 FROM bologna.incarichi_di_collaborazione;
 ```
-mi da 213270,061 che mi sembra meglio. gli errori con lamvirgola erano presenti anche a lavoro molto spesso 
+mi da 213270,061 che mi sembra meglio. gli errori con la virgola erano presenti anche a lavoro molto spesso 
 quindi ora rifaccio anche incarich_conferiti
 
 ```sql
@@ -149,6 +149,8 @@ FROM bologna.incarichi_conferiti;
 ```
 
 che mi da' 46935,830
+mi chiedo se ci sia un modo per fare queste conversioni in automatico, tipo settare u singolo database come "italiano" e non tutto dbeaver
+ha senso?
 
 poi si potrebbe vedere chi ha conferito piu' incarichi, chi e' stato pagato di piu', quale struttura ha conferito piu' incarichi ecc
 ho cercato il collaboratore che ha ricevuto piu' pagato ed e' stato gabr
