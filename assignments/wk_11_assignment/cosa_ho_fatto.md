@@ -153,7 +153,7 @@ mi chiedo se ci sia un modo per fare queste conversioni in automatico, tipo sett
 ha senso?
 
 poi si potrebbe vedere chi ha conferito piu' incarichi, chi e' stato pagato di piu', quale struttura ha conferito piu' incarichi ecc
-ho cercato il collaboratore che ha ricevuto piu' pagato ed e' stato gabr
+ho cercato il collaboratore che ha ricevuto piu' pagato ed e' stato gabriele bonora 
 
 qui e' successo che e' morto il pc
 avevo ricercato questo qui che aveva preso piu' soldi ed aprendo il link dentro il db al suo curriculum il pc mi e' crashato
@@ -165,6 +165,8 @@ ora penso che vi saluto!
 questo assignment mi ha richiesto tutta la mattina e un'oretta dopo pranzo ma mi sono divertito molto a farlo
 avrei potuto sicuramente scrivere di piu' ma ho pensato che avreste avuto troppoa roba da leggere
 inoltre lavorare da casa per me e' deleterio, non sono abituato e mi distraggo troppo :(
+
+  p.s. mi sono dimenticatodi inserire il data catalogue che sto facendo ora
 
  
 
