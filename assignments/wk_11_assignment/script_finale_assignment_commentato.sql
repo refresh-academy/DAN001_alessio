@@ -1,3 +1,6 @@
+
+-- scrivo da lavoro. non sono riuscito a commentare e forse alcuni pezzi mancano delle puntine virgola da chiudere percio' si rompe ma lensingole creazioni dovrebbero essere giuste
+
 CREATE SCHEMA IF NOT EXISTS openbo_landing;
 CREATE SCHEMA IF NOT EXISTS openbo_integration;
 CREATE SCHEMA IF NOT EXISTS openbo_dwh;
