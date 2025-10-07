@@ -209,5 +209,6 @@ WHERE
 GROUP BY 
     ragione_sociale, partita_iva, codice_fiscale; -- rimuovo i duplicati sulla chiave naturale, passo necessario sempre da fare quando creo una anagrafica
 
+-- l'ultimo pezzo e' ok e andava fatto tutto cosi' praticamente
 -- ok fine :) ciaooo
 
