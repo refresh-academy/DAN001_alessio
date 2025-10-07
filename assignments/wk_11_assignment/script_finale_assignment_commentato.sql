@@ -8,22 +8,23 @@ CREATE SCHEMA IF NOT EXISTS openbo_dwh;
 
 SET search_path TO openbo_landing
 
--- ho perso tutto perche' ho importantouno script invece di aprirlo
+-- ho perso tutto perche' ho importanto uno script invece di aprirlo
 -- mareddu da investigare ndA era un problema in importazione che non ho avuto tempo di investigare, si tratta di un valore in una casella che mi ha dato problemi ma solo in import
+
 --fare union non join perche' l'ha detto Andrea e non ho capito perche'
 
 
-SELECT SELECT id, n_pg_atto, anno_pg_atto, oggetto, classificazione_incarichi, descrizione_classificazione_incarichi, norma_o_titolo_a_base_dell_attribuzione, importo_euro, settore_dipartimento_area, servizio, uo, dirigente, responsabile, ragione_sociale, partita_iva, codice_fiscale, durata_dal, durata_al, curriculum_link
+/* SELECT SELECT id, n_pg_atto, anno_pg_atto, oggetto, classificazione_incarichi, descrizione_classificazione_incarichi, norma_o_titolo_a_base_dell_attribuzione, importo_euro, settore_dipartimento_area, servizio, uo, dirigente, responsabile, ragione_sociale, partita_iva, codice_fiscale, durata_dal, durata_al, curriculum_link
 FROM openbo_landing.incarichi_di_collaborazione;
 union ALL
 SELECT id, n_pg_atto, anno_pg_atto, classificazione_incarico, descrizione_incarico, data_inizio_incarico, data_fine_incarico, durata_incarico_gg, compenso_previsto_euro, struttura_conferente, responsabile_della_struttura_conferente
-FROM openbo_landing.incarichi_conferiti; 
+FROM openbo_landing.incarichi_conferiti;  */
 
 -- cerco di fare una union con la maggior quantita' di colonne in comune e farci la DIM_FATTO
 
-drop table if exists DIM_FATTO;
+drop table if exists DIM_ATTO;
 
-create table DIM_FATTO as
+create table DIM_ATTO as
 
 SELECT
     ROW_NUMBER() OVER (ORDER BY id) as ids_atto,
@@ -59,14 +60,17 @@ SELECT
     'n/a' AS norma_titolo_base,
     'incarichi_conferiti' AS source_system
 FROM openbo_landing.incarichi_conferiti
-
+-- qui non vao messo n/a mi sono sbagliato, come da assignment
 UNION ALL
 
 SELECT
     -- ho messo un numero 1000 aggiungendono al row number cosi' non si sovrappone con la select precedente. in teoria non dovrebbe essere necessario ma ora faccio delle prove sia con che senza
-    -- (ROW_NUMBER() OVER (ORDER BY id) + 1000) AS ids_atto,
-	ROW_NUMBER() OVER (ORDER BY id) AS ids_atto,
+    (ROW_NUMBER() OVER (ORDER BY id) + 1000) AS ids_atto,
+	-- un altro modo per farlo e' fare in modo che queste due select siano dentro una subquery e fare il row number fuori
+    -- cosi' non si sovrappongono mai
     n_pg_atto AS numero_pg_atto,
+    -- qui andavano esclusi i null e si duplica se usi n_pg_atto
+    -- fare partition by numero_pg_atto per evitare duplicati (dalla colonnao originale)
     anno_pg_atto AS anno_pg_atto,
     oggetto,
     norma_o_titolo_a_base_dell_attribuzione AS norma_titolo_base,
@@ -79,7 +83,10 @@ FROM openbo_landing.incarichi_di_collaborazione
 
 select count(*) as totale_colonna from openbo_landing.incarichi_conferiti; --813
 select count(*) as totale_colonna from openbo_landing.incarichi_di_collaborazione; --715
-select count(*) as totale_colonna from openbo_landing.dim_fatto; --1528
+select count(*) as totale_colonna from openbo_landing.dim_atto; --1528
+
+-- questo e' sbagliato perche' questa e' una anagrafica e non un fatto 
+-- le dimensioni sono anagrafiche
 
 -- volendo posso farlo tutto in una tabellina 
 
@@ -118,17 +125,6 @@ where df.oggetto is NULL;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 SET search_path TO openbo_integration;
 
 DROP TABLE IF EXISTS dim_classificazione_incarico;
@@ -144,15 +140,14 @@ FROM
     openbo_landing.incarichi_di_collaborazione
 GROUP BY 
 classificazione_incarichi, descrizione_classificazione_incarichi;
---questa group by dovrebbe servire a selezionare le cose in modo che non ci siano duplicazioni anche se non capisco come funziona
+--questa group by dovrebbe servire a selezionare le cose in modo che non ci siano duplicazioni anche se non capisco bene come funziona
 
-
--- provo ad inserire il record fittizio
+-- provo ad inserire il record fittizio ma qui potrei fare tutto con una nunion senza insert
 
 INSERT INTO dim_classificazione_incarico (ids_classificazione_incarico, id_classificazione_incarico, descrizione_classificazione_incarichi, source_system)
 VALUES (
-    -- 1. Chiave Surrogata: MAX ID + 1
-    (SELECT MAX(ids_classificazione_incarico) + 1 FROM dim_classificazione_incarico),
+    -- 1. Chiave Surrogata: -1
+    -1,
     'NA', 
     'Classificazione Fittizia/Mancante',
     --descrizione per chiarire che e' un dato finto
@@ -163,6 +158,9 @@ VALUES (
 --ho voluto fare tutto a pezzi perche' non ho capito molto bene
 
 ALTER TABLE dim_classificazione_incarico ADD PRIMARY KEY (ids_classificazione_incarico);
+-- qui non server mettere la primary key ma siccome qui non inseriamo mai righe non mi interessa farlo
+-- qui mi e' venuto il dubbio che facendo cosi' credo il -1 come chiave primaria e non so se va bene
+-- forse sarebbe meglio fare un update e mettere -1 a tutti i record che hanno id_classificazione_incarico null
 
 --ora provo a creare la DIM_STRUTTURA
 DROP TABLE IF EXISTS dim_struttura;
@@ -211,4 +209,5 @@ WHERE
 GROUP BY 
     ragione_sociale, partita_iva, codice_fiscale; -- rimuovo i duplicati sulla chiave naturale, passo necessario sempre da fare quando creo una anagrafica
 
+-- ok fine :) ciaooo
 
