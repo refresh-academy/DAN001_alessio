@@ -21,13 +21,13 @@ che dovrebbe fare ottenere le tabelle pulite.
 
 1. Ultimare la dim_tempo_inizio e dim_tempo_fine
 - rifare dim_tempo_inizio usando la tabella union (avendo io fatto tutto per prova solo da incarichi_conferiti)
-- 'query da fare' as ids_responsabile,
+- 'query da fare' as ids_responsabile, con la solita row number over per creare un id unico (prendo da chinook)
 - 'ETL da fare meglio' as source_system
 
-2. finire tempoary table tt_responsabili
+2. finire temporary table tt_responsabili
 - rifare dim_responsabile con tt_resonsabili xche' come sopra ho fatto tutto on the fly da incarichi_conferiti
-- sistemare ada labriolaa dentro al replace
-- sistemare franco charii dentro al replace
+- sistemare ada labriolaa dentro al mega-replace
+- sistemare franco chiarii dentro al mega-replace
 - sistemare A.I. (facoltativo)
 
 3. fare FACT_INCARICHI
