@@ -40,3 +40,7 @@ cmq penso di aver capito e penso di riuscire a fare il resto con calma e tante g
 ##  note
 la cartella casini vari contiene gli script vari che ho usato che ora vado a copincollare in un unico script
 p.s. GOBLIN ROCKS
+
+p.p.s. SIIIIIII PRIMO SCRIPT COMPLETO CHE FUNZIONAAAAAAA AL PRIMO COLPOOO YEEEEEEEH
+sono molto happy
+volevo fare alcune cose in python ma non ce l'ho fatta sorry terry <3
