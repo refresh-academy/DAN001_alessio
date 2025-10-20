@@ -9,11 +9,11 @@ ho pensato di mettere tutto su git
 - nel file principale ci sono i commenti che dovrebbero aiutare a capire i passaggi
 
 ## come eseguire
-- prima eseguire su dbeaver lo script
+- prima eseguire su dbeaver lo script 01_openbo_script_landing_andrea.sql
 [text](01_openbo_script_landing_andrea.sql)
 che permette di fare un landing indentico al mio 
-- successivamente eseguire lo script
-[text](02_openbo_script_dwh_finale)
+- successivamente eseguire lo script 02_openbo_script_dwh_finale.sql
+[text](02_openbo_script_dwh_finale.sql)
 
 che dovrebbe fare ottenere le tabelle pulite.
 
@@ -34,7 +34,7 @@ che dovrebbe fare ottenere le tabelle pulite.
 4. ET_INCARICHI_COLLABORAZIONE e ET_INCARICHI_CONFERITI
 5. fare CHECK_IMPORTI 
 
-Mi piacerebbe provare a farli quindi branchero' da questo ultimo commit per provare a finire le cose.
+Mi piacerebbe provare a farli quindi branch da questo ultimo commit per provare a finire le cose con i miei tempi.
 cmq penso di aver capito e penso di riuscire a fare il resto con calma e tante google search
 
 ##  note
