@@ -1,5 +1,5 @@
 
--- Preferenze alimentari in SQL prove varie
+-- Preferenze alimentari in SQL prove varie varie
 -- Assignment week 05
 
 -- Riprendiamo l’assignment sulle preferenze alimentari e svolgiamo una serie di task in SQL.
