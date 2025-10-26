@@ -1,5 +1,3 @@
--- drop schema if exists chinook_integration cascade;  
--- questo lo commento
 
 SET search_path TO openbo_dwh;
 
@@ -26,7 +24,8 @@ WHERE
 
 -- ok qui ho creato una tabella che non contiene null ma ha un problema perche' non mi casta integer correttamente. ci penso dopo
 
--- questa e' da rifare xche' devo usare la tabella temporanea
+-- questa ho rifatto perche' ho usato adesso la tabella tt
+
 drop table if exists openbo_dwh.dim_tempo_inizio ; 
 create table openbo_dwh.dim_tempo_inizio as
 select distinct
@@ -83,8 +82,8 @@ select distinct
 	
 from openbo_landing.lt_incarichi_di_collaborazione;
 
-
-SELECT
+-- qui ho fatto una prova per vedere maggio
+/*SELECT
     nome_mese,
     COUNT(ids_giorno) AS numero_di_giorni_unici_presenti
 FROM
@@ -96,7 +95,7 @@ ORDER BY
 
 select * from openbo_dwh.dim_tempo_inizio dti 
 where nome_mese = 'May'
-order by dti.ids_giorno 
+order by dti.ids_giorno */
 
 
 -- ora provo a creare la dimensione fine 
@@ -121,9 +120,9 @@ where
     nullif(lt_incarichi_conferiti.data_fine_incarico, '')::date is not null;
 
 
--- controllo che non ci siano duplicati
+-- controllo che non ci siano duplicati e ora lo commento
 
-select
+/*select
     data_sorgente_fine,
     count(*) as conteggio_duplicati
 from
@@ -146,11 +145,11 @@ group by
 having
     count(*) > 1;
     
--- ok qui mi sembra vada tutto bene! yeeeeh. ho il dubbio che sto usando pero' solo la parte di uno e non la union. proviamo a fare la union di tutte e due e dargli una tabella temporanea. ho passato qualche giorno lavorando soltanto e non ricordo cosa dovevo fare quindi ora faccio solo la union
+-- ok qui mi sembra vada tutto bene! yeeeeh. ho il dubbio che sto usando pero' solo la parte di uno e non la union. proviamo a fare la union di tutte e due e dargli una tabella temporanea. 2025_10_20 ho passato qualche giorno lavorando soltanto e non ricordo cosa dovevo fare quindi ora faccio solo la union*/
     
- select tti.data_sorgente from openbo_landing.tt_tempo_inizio tti 
+/* select tti.data_sorgente from openbo_landing.tt_tempo_inizio tti 
  union
- select data_sorgente_fine  from openbo_landing.tt_tempo_fine
+ select data_sorgente_fine  from openbo_landing.tt_tempo_fine*/
  
  --francamente non ho capito il ragionamento che ho fatto e passo oltre
 
@@ -227,33 +226,42 @@ select distinct
 	
 from openbo_integration.tt_tempo_fine;
 
--- qui semplicemente ho copincollato la creazione inizio e messo tutto con "al" invece che dal
+-- qui semplicemente ho copincollato la creazione inizio e messo tutto dalla tabella tt di fine
 
+-- ho cercato online un aiuto per scrivere dei nest della funzione replace, ho visto che e' possibile nestare un sacco di cose e quindi ho prima fatto "dottore" e poi "dott" ed ho messo tutto lower perche' prendesse tutto. per ora non ho sistemato ada labriola, voglio finire le tabelle, devo anche mettere initcap
 
--- ho cercato online un aiuto per scrivere dei nest della funzione replace, ho visto che e' possibile nestare un sacco di cose e quindi ho prima fatto "dottore" e poi "dott" ed ho messo tutto lower perche' prendesse tutto. per ora non ho sistemato ada labriola, voglio finire le tabelle
+-- ora faccio union x tabella temporanea responsabili pulendo nel mentre spazi e maiuscole minuscole che dovrebbe essere la mia tt_
 
--- ora faccio union x tabella temporanea responsabili pulendo nel mentre spazi e maiuscole minuscole
-
+drop table if exists openbo_integration.tt_responsabili;
+create table openbo_integration.tt_responsabili as
 select 
-	coalesce(lower(trim(responsabile)), 'missing/mancante'),
+	coalesce(
+		nullif(trim(lidc.nominativo_responsabile), ''),
+		'missing/mancante'
+		) as responsabile,
 	'incarichi_di_collaborazione' as source_system
-	from openbo_landing.lt_incarichi_di_collaborazione lidc 
+	from openbo_integration.tt_incarichi_collaborazione lidc 
 
 union
 
-select coalesce(trim(lower(responsabile_della_struttura_conferente)), 'missing/mancante'),
+select coalesce(
+		nullif(trim(lic.nominativo_responsabile), ''),
+		'missing/mancante'
+		) as responsabile,
 'incarichi_conferiti' as source_system	
-from openbo_landing.lt_incarichi_conferiti lic 
+from openbo_integration.tt_incarichi_conferiti lic;
 
 
+
+-- qui provo un primo abbozzo di dim_responsabile
 
 set search_path to openbo_dwh;
-
 drop table if exists openbo_dwh.dim_responsabile;
 
 create table dim_responsabile as
 select distinct
-	trim( 
+ ROW_NUMBER() OVER () as ids_responsabile,
+	(trim( 
 		replace(
 			replace(
 				replace(
@@ -264,46 +272,26 @@ select distinct
 	                                replace(
 	                                    replace(
 	                                   		replace(
-	                                        	replace(lower(responsabile), 'arch.', ''), 
-					                		'avvocato', ''),
-				                		'avv,', ''),
-			                		'avv.', ''),
-			                		'il direttore del settore dott.', ''),
-	                    		'direttore settore entrate dott.', ''),
-	                		'dott.ssa', ''),
-	            		'dott.', ''),
-	        		'dr.ssa', ''),
-	    		'dr.',''),		
-		'ing.', ''
+	                                        	replace(responsabile, 'Arch.', ''), 
+					                		'Avvocato', ''),
+				                		'Avv,', ''),
+			                		'Avv.', ''),
+			                		'Il Direttore Del Settore Dott.', ''),
+	                    		'Direttore Settore Dntrate Dott.', ''),
+	                		'Dott.Ssa', ''),
+	            		'Dott.', ''),
+	        		'Dr.Ssa', ''),
+	    		'Dr.',''),		
+		'Ing.', ''
 		)
-	) as nominativo_responsabile,
+	)) as nominativo_responsabile,
+
+case
+	when source_system = 'incarichi_di_collaborazione' then 'incarichi di collaborazione'
+	when source_system = 'incarichi_conferiti' then 'incarichi conferiti'
+	else 'ETL'
+	end as source_system
 	
-'query' as ids_responsabile,
-'ETL' as source_system
 
-from openbo_landing.lt_incarichi_di_collaborazione;
+from openbo_integration.tt_responsabili;
 
-
--- cose che restano da fare
-
-/*
-rifare dim_tempo_inizio usando la tabella union
-fare tt_responsabili
-rifare dim_responsabile con tt_resonsabilia
-sistemare ada labriolaa dentro al replace
-sistemare franco charii dentro al replace
-sistemare A.I.*
-
-fare FACT_INCARICHI
-fare ET_INCARICHI_COLLABORAZIONE e ET_INCARICHI_CONFERITI
-fare CHECK_IMPORTI /
-
-  
-
-
-
-    
-    
-    
-    
-    
